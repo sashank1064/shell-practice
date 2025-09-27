@@ -12,3 +12,10 @@ fi
 
 dnf install mysql -y
 
+if [ $? -eq 0 ]
+then 
+echo " installing mysql"
+else 
+echo "not installing mysql"
+exit 1
+fi
